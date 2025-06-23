@@ -11,7 +11,7 @@ const Portfolio: React.FC = () => {
       tech: ["JavaScript", "Node.js", "Security", "API"],
       year: "2018",
       users: "10K+ Users",
-      link: "https://bugsolution.site",
+      link: "https://bugsolution.tech",
       featured: true,
       category: "Development Tools"
     },
