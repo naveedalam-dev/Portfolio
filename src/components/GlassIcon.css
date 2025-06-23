@@ -1,0 +1,182 @@
+.glass-icon-container {
+  display: inline-block;
+}
+
+.glass-icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  perspective: 24em;
+  transform-style: preserve-3d;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.glass-icon__back,
+.glass-icon__front,
+.glass-icon__label {
+  transition: opacity 0.3s cubic-bezier(0.83, 0, 0.17, 1),
+    transform 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.glass-icon__back,
+.glass-icon__front {
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glass-icon__back {
+  box-shadow: 0.4em -0.4em 0.6em hsla(223, 10%, 10%, 0.15);
+  display: block;
+  transform: rotate(12deg);
+  transform-origin: 100% 100%;
+}
+
+.glass-icon__front {
+  background-color: hsla(0, 0%, 100%, 0.15);
+  box-shadow: 0 0 0 0.1em hsla(0, 0%, 100%, 0.25) inset;
+  backdrop-filter: blur(0.75em);
+  -webkit-backdrop-filter: blur(0.75em);
+  display: flex;
+  transform-origin: 80% 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-icon__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.glass-icon__label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.4;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  transform: translateY(0);
+  color: #374151;
+  margin-top: 0.5rem;
+  pointer-events: none;
+}
+
+.dark .glass-icon__label {
+  color: #d1d5db;
+}
+
+.glass-icon:focus-visible .glass-icon__back,
+.glass-icon:hover .glass-icon__back {
+  transform: rotate(20deg) translate3d(-0.4em, -0.4em, 0.4em);
+}
+
+.glass-icon:focus-visible .glass-icon__front,
+.glass-icon:hover .glass-icon__front {
+  transform: translateZ(1.5em);
+}
+
+.glass-icon:focus-visible .glass-icon__label,
+.glass-icon:hover .glass-icon__label {
+  opacity: 1;
+  transform: translateY(15%);
+}
+
+.glass-icon:active {
+  transform: scale(0.95);
+}
+
+/* Dark mode adjustments */
+.dark .glass-icon__front {
+  background-color: hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0 0 0.1em hsla(0, 0%, 100%, 0.1) inset;
+}
+
+.dark .glass-icon__back {
+  box-shadow: 0.4em -0.4em 0.6em hsla(0, 0%, 0%, 0.25);
+}
+
+/* Size-specific adjustments */
+.glass-icon.w-8 .glass-icon__back,
+.glass-icon.w-8 .glass-icon__front {
+  border-radius: 0.75rem;
+}
+
+.glass-icon.w-10 .glass-icon__back,
+.glass-icon.w-10 .glass-icon__front {
+  border-radius: 0.875rem;
+}
+
+.glass-icon.w-16 .glass-icon__back,
+.glass-icon.w-16 .glass-icon__front {
+  border-radius: 1.25rem;
+}
+
+.glass-icon.w-20 .glass-icon__back,
+.glass-icon.w-20 .glass-icon__front {
+  border-radius: 1.5rem;
+}
+
+/* Focus styles for accessibility */
+.glass-icon:focus-visible {
+  outline: 2px solid #374151;
+  outline-offset: 2px;
+}
+
+.dark .glass-icon:focus-visible {
+  outline-color: #d1d5db;
+}
+
+/* Disabled state */
+.glass-icon:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.glass-icon:disabled:hover .glass-icon__back,
+.glass-icon:disabled:hover .glass-icon__front,
+.glass-icon:disabled:hover .glass-icon__label {
+  transform: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .glass-icon__label {
+    font-size: 0.7rem;
+  }
+  
+  .glass-icon__back {
+    box-shadow: 0.3em -0.3em 0.5em hsla(223, 10%, 10%, 0.15);
+  }
+  
+  .dark .glass-icon__back {
+    box-shadow: 0.3em -0.3em 0.5em hsla(0, 0%, 0%, 0.25);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .glass-icon,
+  .glass-icon__back,
+  .glass-icon__front,
+  .glass-icon__label {
+    transition: none;
+  }
+  
+  .glass-icon:hover .glass-icon__back,
+  .glass-icon:hover .glass-icon__front {
+    transform: none;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Umar Hashmi - Developer | UI/UX",
+  "short_name": "Umar Hashmi",
+  "description": "Professional portfolio of Umar Hashmi - Web Developer, UI/UX Designer, and creator of VNHAX and PUBHSTUFF tools",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#111827",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
