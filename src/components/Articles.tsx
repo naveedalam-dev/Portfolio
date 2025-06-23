@@ -8,14 +8,14 @@ const Articles: React.FC = () => {
   const articles = [
     {
       id: 1,
-      title: "Naveed Alam: Pakistan's Leading Web Developer and Creator of Innovative Digital Solutions",
-      slug: "naveed-alam-pakistan-web-developer-digital-solutions-creator",
-      excerpt: "Discover how Naveed Alam became Pakistan's most trusted web developer, creating innovative digital solutions and serving 250+ global clients since 2018.",
+      title: "Naveed Alam: Pakistan's Leading Web Developer and Creator of Innovative Solutions",
+      slug: "naveed-alam-pakistan-web-developer-innovative-solutions-creator",
+      excerpt: "Discover how Naveed Alam became Pakistan's most trusted web developer, creating innovative solutions and serving 250+ global clients since 2018.",
       content: `
         <div class="prose prose-lg dark:prose-invert max-w-none">
-          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Naveed Alam: Pakistan's Leading Web Developer and Creator of Innovative Digital Solutions</h1>
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Naveed Alam: Pakistan's Leading Web Developer and Creator of Innovative Solutions</h1>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Naveed Alam</strong> stands as one of Pakistan's most accomplished web developers and UI/UX designers. Since 2018, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has been revolutionizing the digital landscape through his professional agency, Naveed Alam Digital, serving over 250 clients across 20+ countries including the USA, UK, Germany, UAE, Canada, and Australia.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Naveed Alam</strong> stands as one of Pakistan's most accomplished web developers and UI/UX designers. Since 2018, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has been revolutionizing the digital landscape through his professional services, serving over 250 clients across 20+ countries including the USA, UK, Germany, UAE, Canada, and Australia.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Professional Expertise and Technical Skills</h2>
           
@@ -60,7 +60,7 @@ const Articles: React.FC = () => {
       readTime: "8 min read",
       author: "Naveed Alam",
       category: "Professional Profile",
-      tags: ["Web Developer", "Digital Solutions", "UI/UX Designer"],
+      tags: ["Web Developer", "Innovative Solutions", "UI/UX Designer"],
       featured: true,
       image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
@@ -68,20 +68,20 @@ const Articles: React.FC = () => {
       id: 2,
       title: "Naveed Alam's Journey: From Innovative Creator to Pakistan's Most Trusted Web Developer",
       slug: "naveed-alam-journey-innovative-creator-trusted-web-developer-pakistan",
-      excerpt: "Explore the inspiring journey of Naveed Alam, from creating innovative digital solutions to becoming Pakistan's most sought-after web developer with 250+ global projects.",
+      excerpt: "Explore the inspiring journey of Naveed Alam, from creating innovative solutions to becoming Pakistan's most sought-after web developer with 250+ global projects.",
       content: `
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Naveed Alam's Journey: From Innovative Creator to Pakistan's Most Trusted Web Developer</h1>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">The story of <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> is one of innovation, dedication, and remarkable success in the digital world. Based in Pakistan, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has transformed from a passionate developer creating digital solutions to becoming one of Pakistan's most trusted web developers and UI/UX designers.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">The story of <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> is one of innovation, dedication, and remarkable success in the digital world. Based in Pakistan, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has transformed from a passionate developer creating solutions to becoming one of Pakistan's most trusted web developers and UI/UX designers.</p>
 
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">The Beginning: Creating Innovative Digital Solutions</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">The Beginning: Creating Innovative Solutions</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">In 2018, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> made his mark in the development community by creating innovative digital solutions that quickly gained recognition. His expertise in modern web technologies and user-centric design established <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> as an innovative force in digital development.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">In 2018, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> made his mark in the development community by creating innovative solutions that quickly gained recognition. His expertise in modern web technologies and user-centric design established <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> as an innovative force in development.</p>
 
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Founding Naveed Alam Digital: A Professional Success Story</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Building Professional Services: A Success Story</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Building on his early success, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> founded <strong class="text-gray-900 dark:text-white">Naveed Alam Digital</strong>, a professional digital agency that has become synonymous with premium web development and design services in Pakistan.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Building on his early success, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> established professional services that have become synonymous with premium web development and design in Pakistan.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Global Client Success Stories</h2>
           
@@ -101,7 +101,7 @@ const Articles: React.FC = () => {
       readTime: "12 min read",
       author: "Naveed Alam",
       category: "Success Story",
-      tags: ["Success Story", "Web Developer Journey", "Digital Solutions"],
+      tags: ["Success Story", "Web Developer Journey", "Innovative Solutions"],
       featured: true,
       image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
@@ -114,7 +114,7 @@ const Articles: React.FC = () => {
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Why Choose Naveed Alam: The Complete Guide to Pakistan's Premier Web Developer</h1>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">When searching for a web developer and UI/UX designer who can deliver exceptional results, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> stands out as Pakistan's premier choice. Based in Pakistan and serving clients globally through his agency Naveed Alam Digital, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has established himself as a trusted partner for businesses seeking premium digital solutions.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">When searching for a web developer and UI/UX designer who can deliver exceptional results, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> stands out as Pakistan's premier choice. Based in Pakistan and serving clients globally, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has established himself as a trusted partner for businesses seeking premium solutions.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Unmatched Expertise and Experience</h2>
           
@@ -125,7 +125,7 @@ const Articles: React.FC = () => {
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
             <li><strong class="text-gray-900 dark:text-white">250+ Completed Projects:</strong> Successfully delivered projects across 20+ countries</li>
             <li><strong class="text-gray-900 dark:text-white">100% Client Satisfaction:</strong> Maintained perfect satisfaction rate throughout career</li>
-            <li><strong class="text-gray-900 dark:text-white">Global Recognition:</strong> Creator of innovative digital solutions</li>
+            <li><strong class="text-gray-900 dark:text-white">Global Recognition:</strong> Creator of innovative solutions</li>
             <li><strong class="text-gray-900 dark:text-white">Industry Impact:</strong> Projects have increased client engagement by up to 300%</li>
           </ul>
 
@@ -144,7 +144,7 @@ const Articles: React.FC = () => {
       readTime: "15 min read",
       author: "Naveed Alam",
       category: "Professional Guide",
-      tags: ["Professional Services", "Digital Solutions", "Why Choose"],
+      tags: ["Professional Services", "Solutions", "Why Choose"],
       featured: true,
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800"
     }

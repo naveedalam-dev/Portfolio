@@ -36,7 +36,7 @@ const Services: React.FC = () => {
     {
       icon: Search,
       title: "SEO & Marketing",
-      description: "Comprehensive SEO strategies and digital marketing.",
+      description: "Comprehensive SEO strategies and marketing.",
       features: ["Technical SEO", "Content Strategy", "Performance", "Analytics"],
       price: "Starting from $800/month"
     },
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
             Professional Services
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Comprehensive digital solutions delivered with premium quality through Naveed Alam Digital agency.
+            Comprehensive solutions delivered with premium quality by Naveed Alam.
           </p>
         </motion.div>
 

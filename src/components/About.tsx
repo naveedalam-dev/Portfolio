@@ -21,7 +21,7 @@ const About: React.FC = () => {
   const achievements = [
     "250+ Global Projects",
     "20+ Countries Served",
-    "Premium Digital Solutions",
+    "Premium Solutions",
     "Expert Developer & Designer"
   ];
 
@@ -124,7 +124,7 @@ const About: React.FC = () => {
             About Naveed Alam
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Web Developer & UI/UX Designer from Pakistan. Creator of innovative digital solutions for global clients.
+            Web Developer & UI/UX Designer from Pakistan. Creator of innovative solutions for global clients.
           </p>
         </motion.div>
 
@@ -322,10 +322,10 @@ const About: React.FC = () => {
               <div className="space-y-4 text-sm lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   Since 2018, I've been crafting digital experiences that make a difference. What started as creating 
-                  innovative digital solutions has evolved into serving clients across 20+ countries.
+                  innovative solutions has evolved into serving clients across 20+ countries.
                 </p>
                 <p>
-                  Based in Pakistan, I founded <strong className="text-gray-900 dark:text-white">Naveed Alam Digital</strong> - 
+                  Based in Pakistan, I founded <strong className="text-gray-900 dark:text-white">Naveed Alam</strong> - 
                   delivering premium web development, UI/UX design, and AI-powered solutions to businesses worldwide.
                 </p>
                 <p>

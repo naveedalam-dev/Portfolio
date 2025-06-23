@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="text-gray-400 mb-6 max-w-md leading-relaxed text-sm lg:text-base"
             >
-              Creator of innovative digital solutions. Trusted by 250+ global clients 
+              Creator of innovative solutions. Trusted by 250+ global clients 
               with premium web development and design solutions since 2018.
             </motion.p>
 
@@ -202,7 +202,7 @@ const Footer: React.FC = () => {
             </button>
             <div className="text-sm text-gray-500">
               <span>Powered by </span>
-              <span className="text-white font-medium">Naveed Alam Digital</span>
+              <span className="text-white font-medium">Naveed Alam</span>
             </div>
           </div>
         </div>
