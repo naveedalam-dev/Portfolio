@@ -34,7 +34,7 @@ const Header: React.FC = () => {
   };
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   return (
@@ -56,12 +56,12 @@ const Header: React.FC = () => {
             onClick={() => scrollToSection('#home')}
           >
             <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gray-900 dark:bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
-              <span className="text-white dark:text-gray-900 font-bold text-lg lg:text-xl">U</span>
+              <span className="text-white dark:text-gray-900 font-bold text-lg lg:text-xl">N</span>
             </div>
             {/* Logo Text - Always visible on mobile */}
             <div className="min-w-0">
               <h1 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 dark:text-white truncate">
-                Umar Hashmi
+                Naveed Alam
               </h1>
               <p className="text-xs lg:text-sm text-gray-600 dark:text-gray-400 truncate">
                 Developer | UI/UX

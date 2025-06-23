@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   };
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   const skills = [
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             {/* Main Heading */}
             <div className="space-y-3 lg:space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 dark:text-white leading-tight">
-                Umar Hashmi
+                Naveed Alam
               </h1>
               <p className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 font-medium">
                 Developer & UI/UX Designer
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6">
               <div className="flex items-center space-x-2">
                 <SimpleIcon icon={<MapPin className="w-4 h-4" />} size="sm" />
-                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Islamabad, Pakistan</span>
+                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Pakistan</span>
               </div>
               <div className="flex items-center space-x-2">
                 <SimpleIcon icon={<Calendar className="w-4 h-4" />} size="sm" />
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
 
             {/* Description */}
             <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 px-4 lg:px-0">
-              Original creator of <span className="font-semibold text-gray-900 dark:text-white">VNHAX</span> and <span className="font-semibold text-gray-900 dark:text-white">PUBHSTUFF</span> tools. 
+              Creator of innovative digital solutions. 
               Trusted by <span className="font-semibold text-gray-900 dark:text-white">250+ global clients</span> with premium development solutions.
             </p>
 
@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
               {/* Header */}
               <div className="flex items-center space-x-4 mb-6 lg:mb-8">
                 <div className="w-12 h-12 bg-gray-900 dark:bg-white rounded-lg flex items-center justify-center">
-                  <span className="text-white dark:text-gray-900 font-bold text-xl">U</span>
+                  <span className="text-white dark:text-gray-900 font-bold text-xl">N</span>
                 </div>
                 <div>
                   <h3 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white">Premium Quality</h3>
