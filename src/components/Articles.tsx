@@ -8,22 +8,18 @@ const Articles: React.FC = () => {
   const articles = [
     {
       id: 1,
-      title: "Umar Hashmi: Pakistan's Leading Web Developer and Original Creator of VNHAX Gaming Tools",
-      slug: "umar-hashmi-pakistan-web-developer-vnhax-creator",
-      excerpt: "Discover how Umar Hashmi became Pakistan's most trusted web developer, creating revolutionary tools like VNHAX and serving 250+ global clients since 2018.",
+      title: "Naveed Alam: Pakistan's Leading Web Developer and Creator of Innovative Digital Solutions",
+      slug: "naveed-alam-pakistan-web-developer-digital-solutions-creator",
+      excerpt: "Discover how Naveed Alam became Pakistan's most trusted web developer, creating innovative digital solutions and serving 250+ global clients since 2018.",
       content: `
         <div class="prose prose-lg dark:prose-invert max-w-none">
-          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Umar Hashmi: Pakistan's Leading Web Developer and Original Creator of VNHAX Gaming Tools</h1>
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Naveed Alam: Pakistan's Leading Web Developer and Creator of Innovative Digital Solutions</h1>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> stands as one of Pakistan's most accomplished web developers and UI/UX designers, based in Islamabad. Since 2018, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> has been revolutionizing the digital landscape through his government-registered agency, U-Designer, serving over 250 clients across 20+ countries including the USA, UK, Germany, UAE, Canada, and Australia.</p>
-
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">The Original Creator of VNHAX and PUBHSTUFF Tools</h2>
-          
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> gained international recognition as the original creator of <strong class="text-gray-900 dark:text-white">VNHAX</strong>, a revolutionary gaming tool platform that has served thousands of users worldwide. His innovative approach to gaming utilities extended to the development of <strong class="text-gray-900 dark:text-white">PUBHSTUFF tools</strong>, establishing him as a pioneer in the gaming development community.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Naveed Alam</strong> stands as one of Pakistan's most accomplished web developers and UI/UX designers. Since 2018, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has been revolutionizing the digital landscape through his professional agency, Naveed Alam Digital, serving over 250 clients across 20+ countries including the USA, UK, Germany, UAE, Canada, and Australia.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Professional Expertise and Technical Skills</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">As a full-stack developer, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> specializes in:</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">As a full-stack developer, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> specializes in:</p>
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
             <li><strong class="text-gray-900 dark:text-white">Frontend Development:</strong> React.js, Next.js, TypeScript, Tailwind CSS</li>
             <li><strong class="text-gray-900 dark:text-white">Backend Development:</strong> Node.js, Express.js, Python, PostgreSQL</li>
@@ -35,13 +31,13 @@ const Articles: React.FC = () => {
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Global Impact and Client Success Stories</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Umar Hashmi's</strong> work has transformed businesses across multiple industries. His e-commerce platforms have increased client user engagement by 300%, while his healthcare management systems have improved patient care significantly. From fintech applications with biometric authentication to AI-powered analytics dashboards, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> delivers solutions that drive real business results.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Naveed Alam's</strong> work has transformed businesses across multiple industries. His e-commerce platforms have increased client user engagement by 300%, while his healthcare management systems have improved patient care significantly. From fintech applications with biometric authentication to AI-powered analytics dashboards, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> delivers solutions that drive real business results.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Awards and Recognition</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4"><strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> has achieved numerous milestones:</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4"><strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has achieved numerous milestones:</p>
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
-            <li>Government-registered developer with Federal Board of Revenue Pakistan</li>
+            <li>Professional certified developer</li>
             <li>AWS Certified professional</li>
             <li>Google Analytics certified</li>
             <li>Meta Blueprint certified</li>
@@ -49,104 +45,104 @@ const Articles: React.FC = () => {
             <li>100% client satisfaction rate</li>
           </ul>
 
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Contact Umar Hashmi</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Contact Naveed Alam</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">For premium web development and design services, contact <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong>:</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">For premium web development and design services, contact <strong class="text-gray-900 dark:text-white">Naveed Alam</strong>:</p>
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
-            <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@umarhashmi.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 302 1550385</li>
-            <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://umarhashmi.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">Location:</strong> Islamabad, Pakistan</li>
+            <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@naveedalam.dev</li>
+            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 300 1234567</li>
+            <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://naveedalam.dev</li>
+            <li><strong class="text-gray-900 dark:text-white">Location:</strong> Pakistan</li>
           </ul>
         </div>
       `,
       publishDate: "Jan 15, 2025",
       readTime: "8 min read",
-      author: "Umar Hashmi",
+      author: "Naveed Alam",
       category: "Professional Profile",
-      tags: ["Web Developer", "VNHAX Creator", "UI/UX Designer"],
+      tags: ["Web Developer", "Digital Solutions", "UI/UX Designer"],
       featured: true,
       image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 2,
-      title: "Umar Hashmi's Journey: From VNHAX Creator to Pakistan's Most Trusted Web Developer",
-      slug: "umar-hashmi-journey-vnhax-creator-trusted-web-developer-pakistan",
-      excerpt: "Explore the inspiring journey of Umar Hashmi, from creating viral gaming tools to becoming Pakistan's most sought-after web developer with 250+ global projects.",
+      title: "Naveed Alam's Journey: From Innovative Creator to Pakistan's Most Trusted Web Developer",
+      slug: "naveed-alam-journey-innovative-creator-trusted-web-developer-pakistan",
+      excerpt: "Explore the inspiring journey of Naveed Alam, from creating innovative digital solutions to becoming Pakistan's most sought-after web developer with 250+ global projects.",
       content: `
         <div class="prose prose-lg dark:prose-invert max-w-none">
-          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Umar Hashmi's Journey: From VNHAX Creator to Pakistan's Most Trusted Web Developer</h1>
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Naveed Alam's Journey: From Innovative Creator to Pakistan's Most Trusted Web Developer</h1>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">The story of <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> is one of innovation, dedication, and remarkable success in the digital world. Based in Islamabad, Pakistan, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> has transformed from a passionate developer creating gaming tools to becoming one of Pakistan's most trusted web developers and UI/UX designers.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">The story of <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> is one of innovation, dedication, and remarkable success in the digital world. Based in Pakistan, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has transformed from a passionate developer creating digital solutions to becoming one of Pakistan's most trusted web developers and UI/UX designers.</p>
 
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">The Beginning: Creating VNHAX and PUBHSTUFF</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">The Beginning: Creating Innovative Digital Solutions</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">In 2018, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> made his mark in the gaming community by creating <strong class="text-gray-900 dark:text-white">VNHAX</strong>, a revolutionary gaming tool platform that quickly gained international recognition. The success of VNHAX led to the development of <strong class="text-gray-900 dark:text-white">PUBHSTUFF tools</strong>, establishing <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> as an innovative force in gaming utilities.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">In 2018, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> made his mark in the development community by creating innovative digital solutions that quickly gained recognition. His expertise in modern web technologies and user-centric design established <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> as an innovative force in digital development.</p>
 
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Founding U-Designer: A Government-Registered Success Story</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Founding Naveed Alam Digital: A Professional Success Story</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Building on his early success, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> founded <strong class="text-gray-900 dark:text-white">U-Designer</strong>, a government-registered digital agency that has become synonymous with premium web development and design services in Pakistan.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Building on his early success, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> founded <strong class="text-gray-900 dark:text-white">Naveed Alam Digital</strong>, a professional digital agency that has become synonymous with premium web development and design services in Pakistan.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Global Client Success Stories</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Umar Hashmi's</strong> portfolio includes transformative projects across various industries, from e-commerce platforms that increased user engagement by 300% to HIPAA-compliant healthcare systems and secure fintech applications.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Naveed Alam's</strong> portfolio includes transformative projects across various industries, from e-commerce platforms that increased user engagement by 300% to healthcare management systems and secure fintech applications.</p>
 
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Connect with Umar Hashmi</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Connect with Naveed Alam</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Ready to work with Pakistan's most trusted web developer? Contact <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> today:</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Ready to work with Pakistan's most trusted web developer? Contact <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> today:</p>
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
-            <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://umarhashmi.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@umarhashmi.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 302 1550385</li>
+            <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://naveedalam.dev</li>
+            <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@naveedalam.dev</li>
+            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 300 1234567</li>
           </ul>
         </div>
       `,
       publishDate: "Jan 14, 2025",
       readTime: "12 min read",
-      author: "Umar Hashmi",
+      author: "Naveed Alam",
       category: "Success Story",
-      tags: ["Success Story", "Web Developer Journey", "VNHAX"],
+      tags: ["Success Story", "Web Developer Journey", "Digital Solutions"],
       featured: true,
       image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       id: 3,
-      title: "Why Choose Umar Hashmi: The Complete Guide to Pakistan's Premier Web Developer",
-      slug: "why-choose-umar-hashmi-pakistan-premier-web-developer-ui-ux-designer",
-      excerpt: "Comprehensive guide explaining why Umar Hashmi is the top choice for web development and UI/UX design services, featuring his expertise and achievements.",
+      title: "Why Choose Naveed Alam: The Complete Guide to Pakistan's Premier Web Developer",
+      slug: "why-choose-naveed-alam-pakistan-premier-web-developer-ui-ux-designer",
+      excerpt: "Comprehensive guide explaining why Naveed Alam is the top choice for web development and UI/UX design services, featuring his expertise and achievements.",
       content: `
         <div class="prose prose-lg dark:prose-invert max-w-none">
-          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Why Choose Umar Hashmi: The Complete Guide to Pakistan's Premier Web Developer</h1>
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Why Choose Naveed Alam: The Complete Guide to Pakistan's Premier Web Developer</h1>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">When searching for a web developer and UI/UX designer who can deliver exceptional results, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> stands out as Pakistan's premier choice. Based in Islamabad and serving clients globally through his agency U-Designer, <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> has established himself as a trusted partner for businesses seeking premium digital solutions.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">When searching for a web developer and UI/UX designer who can deliver exceptional results, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> stands out as Pakistan's premier choice. Based in Pakistan and serving clients globally through his agency Naveed Alam Digital, <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> has established himself as a trusted partner for businesses seeking premium digital solutions.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Unmatched Expertise and Experience</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> brings over 6 years of professional experience in web development and UI/UX design. His expertise spans across multiple technologies and industries, making him the ideal choice for diverse project requirements.</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"><strong class="text-gray-900 dark:text-white">Naveed Alam</strong> brings over 6 years of professional experience in web development and UI/UX design. His expertise spans across multiple technologies and industries, making him the ideal choice for diverse project requirements.</p>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Proven Track Record of Success</h2>
           
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
             <li><strong class="text-gray-900 dark:text-white">250+ Completed Projects:</strong> Successfully delivered projects across 20+ countries</li>
             <li><strong class="text-gray-900 dark:text-white">100% Client Satisfaction:</strong> Maintained perfect satisfaction rate throughout career</li>
-            <li><strong class="text-gray-900 dark:text-white">Global Recognition:</strong> Original creator of VNHAX and PUBHSTUFF gaming tools</li>
+            <li><strong class="text-gray-900 dark:text-white">Global Recognition:</strong> Creator of innovative digital solutions</li>
             <li><strong class="text-gray-900 dark:text-white">Industry Impact:</strong> Projects have increased client engagement by up to 300%</li>
           </ul>
 
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">Contact Information</h2>
           
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Connect with <strong class="text-gray-900 dark:text-white">Umar Hashmi</strong> today:</p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">Connect with <strong class="text-gray-900 dark:text-white">Naveed Alam</strong> today:</p>
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
-            <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://umarhashmi.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@umarhashmi.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 302 1550385</li>
-            <li><strong class="text-gray-900 dark:text-white">Location:</strong> Islamabad, Pakistan</li>
+            <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://naveedalam.dev</li>
+            <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@naveedalam.dev</li>
+            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 300 1234567</li>
+            <li><strong class="text-gray-900 dark:text-white">Location:</strong> Pakistan</li>
           </ul>
         </div>
       `,
       publishDate: "Jan 13, 2025",
       readTime: "15 min read",
-      author: "Umar Hashmi",
+      author: "Naveed Alam",
       category: "Professional Guide",
       tags: ["Professional Services", "Digital Solutions", "Why Choose"],
       featured: true,
@@ -155,7 +151,7 @@ const Articles: React.FC = () => {
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   return (
@@ -172,7 +168,7 @@ const Articles: React.FC = () => {
             Professional Articles
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            In-depth articles about Umar Hashmi's expertise, journey, and professional services in web development and UI/UX design.
+            In-depth articles about Naveed Alam's expertise, journey, and professional services in web development and UI/UX design.
           </p>
         </motion.div>
 
@@ -281,10 +277,10 @@ const Articles: React.FC = () => {
         >
           <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-6 lg:p-8 border border-gray-200 dark:border-gray-800">
             <h3 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Ready to Work with Umar Hashmi?
+              Ready to Work with Naveed Alam?
             </h3>
             <p className="text-sm lg:text-base text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto px-4 lg:px-0">
-              Join 250+ satisfied clients worldwide. Contact Umar Hashmi today for premium web development and UI/UX design services.
+              Join 250+ satisfied clients worldwide. Contact Naveed Alam today for premium web development and UI/UX design services.
             </p>
             <button
               onClick={redirectToWhatsApp}
@@ -355,7 +351,7 @@ const Articles: React.FC = () => {
                     Interested in Working Together?
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm">
-                    Contact Umar Hashmi today for premium web development and UI/UX design services.
+                    Contact Naveed Alam today for premium web development and UI/UX design services.
                   </p>
                   <button
                     onClick={redirectToWhatsApp}

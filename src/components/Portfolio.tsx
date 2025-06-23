@@ -5,36 +5,14 @@ import { ExternalLink, Calendar, Users, ArrowUpRight } from 'lucide-react';
 const Portfolio: React.FC = () => {
   const featuredProjects = [
     {
-      title: "VNHAX",
-      description: "Revolutionary gaming tool platform with advanced features and secure infrastructure.",
-      image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=600",
-      tech: ["JavaScript", "Node.js", "Security", "API"],
-      year: "2018",
-      users: "10K+ Users",
-      link: "https://vnhax.site",
-      featured: true,
-      category: "Gaming Tools"
-    },
-    {
-      title: "PUBHSTUFF Tools",
-      description: "Comprehensive gaming utility suite with premium features and seamless user experience.",
-      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600",
-      tech: ["React", "API", "Cloud", "Security"],
-      year: "2019",
-      users: "5K+ Downloads",
-      link: "#",
-      featured: true,
-      category: "Gaming Tools"
-    },
-    {
       title: "E-Commerce Platform",
       description: "Full-featured e-commerce solution with payment integration and analytics.",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
       tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-      year: "2023",
+      year: "2024",
       users: "Enterprise",
       link: "#",
-      featured: false,
+      featured: true,
       category: "E-Commerce"
     },
     {
@@ -45,14 +23,14 @@ const Portfolio: React.FC = () => {
       year: "2024",
       users: "Corporate",
       link: "#",
-      featured: false,
+      featured: true,
       category: "AI Solutions"
     },
     {
       title: "Healthcare System",
-      description: "HIPAA-compliant healthcare management platform with telemedicine features.",
+      description: "Comprehensive healthcare management platform with telemedicine features.",
       image: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=600",
-      tech: ["React Native", "Node.js", "MySQL", "HIPAA"],
+      tech: ["React Native", "Node.js", "MySQL", "Security"],
       year: "2023",
       users: "Healthcare",
       link: "#",
@@ -69,11 +47,33 @@ const Portfolio: React.FC = () => {
       link: "#",
       featured: false,
       category: "Fintech"
+    },
+    {
+      title: "SaaS Platform",
+      description: "Comprehensive business management platform with automation features.",
+      image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=600",
+      tech: ["Vue.js", "Laravel", "PostgreSQL", "API"],
+      year: "2023",
+      users: "Business",
+      link: "#",
+      featured: false,
+      category: "SaaS"
+    },
+    {
+      title: "Educational Platform",
+      description: "Interactive learning management system with video streaming.",
+      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600",
+      tech: ["React", "Express", "MongoDB", "WebRTC"],
+      year: "2023",
+      users: "Education",
+      link: "#",
+      featured: false,
+      category: "Education"
     }
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   return (
@@ -90,7 +90,7 @@ const Portfolio: React.FC = () => {
             Featured Portfolio
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Showcasing my most impactful projects including the original VNHAX and PUBHSTUFF tools.
+            Showcasing my most impactful projects and innovative digital solutions for global clients.
           </p>
         </motion.div>
 
@@ -126,7 +126,7 @@ const Portfolio: React.FC = () => {
                   {project.featured && (
                     <div className="absolute top-3 right-3">
                       <span className="px-2 py-1 bg-yellow-400 text-black text-xs font-bold rounded-md">
-                        Original
+                        Featured
                       </span>
                     </div>
                   )}

@@ -19,10 +19,10 @@ const About: React.FC = () => {
   ];
 
   const achievements = [
-    "Original Creator of VNHAX",
-    "PUBHSTUFF Tools Developer", 
     "250+ Global Projects",
-    "20+ Countries Served"
+    "20+ Countries Served",
+    "Premium Digital Solutions",
+    "Expert Developer & Designer"
   ];
 
   const technicalStack = [
@@ -35,7 +35,7 @@ const About: React.FC = () => {
   ];
 
   const certifications = [
-    { name: "Government Registered", authority: "FBR Pakistan", year: "2020", verified: true },
+    { name: "Professional Developer", authority: "Certified", year: "2020", verified: true },
     { name: "AWS Certified", authority: "Amazon Web Services", year: "2023", verified: true },
     { name: "Google Analytics", authority: "Google", year: "2022", verified: true },
     { name: "Meta Blueprint", authority: "Meta", year: "2023", verified: true }
@@ -67,31 +67,31 @@ const About: React.FC = () => {
   const socialLinks = [
     { 
       icon: Instagram, 
-      url: 'https://instagram.com/umarhashmi.dev', 
+      url: 'https://instagram.com/naveedalam.dev', 
       name: 'Instagram',
       color: 'pink'
     },
     { 
       icon: Linkedin, 
-      url: 'https://linkedin.com/in/umarhashmi-dev', 
+      url: 'https://linkedin.com/in/naveedalam-dev', 
       name: 'LinkedIn',
       color: 'blue'
     },
     { 
       icon: Github, 
-      url: 'https://github.com/umarhashmi-dev', 
+      url: 'https://github.com/naveedalam-dev', 
       name: 'GitHub',
       color: 'gray'
     },
     { 
       icon: Twitter, 
-      url: 'https://twitter.com/umarhashmi_dev', 
+      url: 'https://twitter.com/naveedalam_dev', 
       name: 'Twitter',
       color: 'cyan'
     },
     { 
       icon: Facebook, 
-      url: 'https://facebook.com/umarhashmi.dev', 
+      url: 'https://facebook.com/naveedalam.dev', 
       name: 'Facebook',
       color: 'blue'
     }
@@ -107,7 +107,7 @@ const About: React.FC = () => {
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   return (
@@ -121,10 +121,10 @@ const About: React.FC = () => {
           className="text-center mb-12 lg:mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            About Umar Hashmi
+            About Naveed Alam
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Web Developer & UI/UX Designer from Islamabad, Pakistan. Original creator of VNHAX and PUBHSTUFF tools.
+            Web Developer & UI/UX Designer from Pakistan. Creator of innovative digital solutions for global clients.
           </p>
         </motion.div>
 
@@ -145,8 +145,8 @@ const About: React.FC = () => {
               {/* Image Container */}
               <div className="relative w-full h-80 lg:h-96 rounded-3xl overflow-hidden bg-gradient-to-br from-gray-200 dark:from-gray-800 to-gray-300 dark:to-gray-900 border-2 border-gray-300 dark:border-gray-950 shadow-2xl">
                 <img
-                  src="/Umar_Hashmi-removebg-preview.png"
-                  alt="Umar Hashmi - Professional Web Developer & UI/UX Designer from Islamabad, Pakistan"
+                  src="/Naveed_Alam-removebg-preview.png"
+                  alt="Naveed Alam - Professional Web Developer & UI/UX Designer from Pakistan"
                   className="w-full h-full object-cover object-center"
                 />
                 
@@ -276,7 +276,7 @@ const About: React.FC = () => {
             {/* Header */}
             <div className="text-center lg:text-left">
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                Umar Hashmi
+                Naveed Alam
               </h3>
               <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-4">
                 Developer & UI/UX Designer
@@ -286,7 +286,7 @@ const About: React.FC = () => {
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6 text-sm text-gray-600 dark:text-gray-400 mb-6">
                 <span className="flex items-center space-x-1">
                   <span>📍</span>
-                  <span>Islamabad, Pakistan</span>
+                  <span>Pakistan</span>
                 </span>
                 <span className="flex items-center space-x-1">
                   <span>📅</span>
@@ -322,11 +322,10 @@ const About: React.FC = () => {
               <div className="space-y-4 text-sm lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   Since 2018, I've been crafting digital experiences that make a difference. What started as creating 
-                  innovative tools like <strong className="text-gray-900 dark:text-white">VNHAX</strong> and <strong className="text-gray-900 dark:text-white">PUBHSTUFF</strong> 
-                  has evolved into serving clients across 20+ countries.
+                  innovative digital solutions has evolved into serving clients across 20+ countries.
                 </p>
                 <p>
-                  Based in Islamabad, Pakistan, I founded <strong className="text-gray-900 dark:text-white">U-Designer</strong> - 
+                  Based in Pakistan, I founded <strong className="text-gray-900 dark:text-white">Naveed Alam Digital</strong> - 
                   delivering premium web development, UI/UX design, and AI-powered solutions to businesses worldwide.
                 </p>
                 <p>

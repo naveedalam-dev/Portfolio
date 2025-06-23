@@ -11,7 +11,7 @@ const Testimonials: React.FC = () => {
       company: "TechStart Inc. (USA)",
       location: "New York, USA",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content: "Umar delivered an exceptional e-commerce platform that exceeded all our expectations. His attention to detail and innovative solutions increased our user engagement by 300%.",
+      content: "Naveed delivered an exceptional e-commerce platform that exceeded all our expectations. His attention to detail and innovative solutions increased our user engagement by 300%.",
       rating: 5,
       project: "E-commerce Platform"
     },
@@ -22,7 +22,7 @@ const Testimonials: React.FC = () => {
       company: "InnovateLab (UK)",
       location: "London, UK",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content: "Working with Umar was a game-changer for our fintech project. His expertise in AI integration and security implementation is outstanding.",
+      content: "Working with Naveed was a game-changer for our fintech project. His expertise in AI integration and security implementation is outstanding.",
       rating: 5,
       project: "AI Dashboard"
     },
@@ -33,14 +33,14 @@ const Testimonials: React.FC = () => {
       company: "Dubai Tech Solutions (UAE)",
       location: "Dubai, UAE",
       image: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content: "Umar's healthcare management system transformed our operations. The HIPAA-compliant solution has improved patient care significantly.",
+      content: "Naveed's healthcare management system transformed our operations. The secure solution has improved patient care significantly.",
       rating: 5,
       project: "Healthcare System"
     }
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   return (

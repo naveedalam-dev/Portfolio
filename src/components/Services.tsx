@@ -50,7 +50,7 @@ const Services: React.FC = () => {
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923021550385', '_blank');
+    window.open('https://wa.me/+923001234567', '_blank');
   };
 
   return (
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
             Professional Services
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Comprehensive digital solutions delivered with premium quality through U-Designer agency.
+            Comprehensive digital solutions delivered with premium quality through Naveed Alam Digital agency.
           </p>
         </motion.div>
 

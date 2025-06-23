@@ -22,27 +22,27 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Redirect to WhatsApp instead of form submission
-    const message = `Hi Umar! I'm interested in your services.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/+923021550385?text=${message}`, '_blank');
+    const message = `Hi Naveed! I'm interested in your services.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
+    window.open(`https://wa.me/+923001234567?text=${message}`, '_blank');
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: "Email",
-      value: "contact@umarhashmi.dev",
-      link: "mailto:contact@umarhashmi.dev"
+      value: "contact@naveedalam.dev",
+      link: "mailto:contact@naveedalam.dev"
     },
     {
       icon: Phone,
       title: "WhatsApp",
-      value: "+92 302 1550385",
-      link: "https://wa.me/923021550385"
+      value: "+92 300 1234567",
+      link: "https://wa.me/923001234567"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Islamabad, Pakistan",
+      value: "Pakistan",
       link: "#"
     }
   ];
