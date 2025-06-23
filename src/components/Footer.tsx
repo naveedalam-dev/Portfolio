@@ -170,22 +170,22 @@ const Footer: React.FC = () => {
               <span className="text-gray-500">Developed By:</span>
               <div className="flex flex-col lg:flex-row items-center space-y-1 lg:space-y-0 lg:space-x-4">
                 <a 
-                  href="https://umarhashmi.dev" 
+                  href="https://naveedalam.dev" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-1 text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  <span>Umar Hashmi</span>
+                  <span>Naveed Alam</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
                 <span className="text-gray-500 hidden lg:inline">&</span>
                 <a 
-                  href="https://naveedalam.dev" 
+                  href="https://umarhashmi.dev/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-1 text-purple-400 hover:text-purple-300 transition-colors"
                 >
-                  <span>Naveed Alam</span>
+                  <span>Umar Hashmi</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
