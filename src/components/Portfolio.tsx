@@ -5,6 +5,28 @@ import { ExternalLink, Calendar, Users, ArrowUpRight } from 'lucide-react';
 const Portfolio: React.FC = () => {
   const featuredProjects = [
     {
+      title: "BugSolution",
+      description: "Revolutionary development platform with advanced features and secure infrastructure.",
+      image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=600",
+      tech: ["JavaScript", "Node.js", "Security", "API"],
+      year: "2018",
+      users: "10K+ Users",
+      link: "https://bugsolution.site",
+      featured: true,
+      category: "Development Tools"
+    },
+    {
+      title: "CyberCrew",
+      description: "Comprehensive platform with premium features and seamless user experience.",
+      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600",
+      tech: ["React", "API", "Cloud", "Security"],
+      year: "2019",
+      users: "5K+ Downloads",
+      link: "#",
+      featured: true,
+      category: "Platform Solutions"
+    },
+    {
       title: "E-Commerce Platform",
       description: "Full-featured e-commerce solution with payment integration and analytics.",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -47,28 +69,6 @@ const Portfolio: React.FC = () => {
       link: "#",
       featured: false,
       category: "Fintech"
-    },
-    {
-      title: "SaaS Platform",
-      description: "Comprehensive business management platform with automation features.",
-      image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=600",
-      tech: ["Vue.js", "Laravel", "PostgreSQL", "API"],
-      year: "2023",
-      users: "Business",
-      link: "#",
-      featured: false,
-      category: "SaaS"
-    },
-    {
-      title: "Educational Platform",
-      description: "Interactive learning management system with video streaming.",
-      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600",
-      tech: ["React", "Express", "MongoDB", "WebRTC"],
-      year: "2023",
-      users: "Education",
-      link: "#",
-      featured: false,
-      category: "Education"
     }
   ];
 
@@ -90,7 +90,7 @@ const Portfolio: React.FC = () => {
             Featured Portfolio
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Showcasing my most impactful projects and innovative digital solutions for global clients.
+            Showcasing my most impactful projects including BugSolution and CyberCrew platforms.
           </p>
         </motion.div>
 

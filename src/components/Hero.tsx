@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
 
             {/* Description */}
             <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 px-4 lg:px-0">
-              Creator of innovative digital solutions. 
+              Creator of <span className="font-semibold text-gray-900 dark:text-white">BugSolution</span> and <span className="font-semibold text-gray-900 dark:text-white">CyberCrew</span> platforms. 
               Trusted by <span className="font-semibold text-gray-900 dark:text-white">250+ global clients</span> with premium development solutions.
             </p>
 

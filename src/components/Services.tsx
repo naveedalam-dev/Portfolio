@@ -67,7 +67,7 @@ const Services: React.FC = () => {
             Professional Services
           </h2>
           <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
-            Comprehensive solutions delivered with premium quality by Naveed Alam.
+            Comprehensive solutions delivered with premium quality through BugSolution.
           </p>
         </motion.div>
 
