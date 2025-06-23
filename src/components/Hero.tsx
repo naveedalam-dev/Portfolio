@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Globe, ArrowDown, Code, Palette, Zap, Star, Users, Coffee } from 'lucide-react';
+import { MapPin, Calendar, Globe, ArrowDown, Code, Palette, Zap, Star, Users, Coffee, Download } from 'lucide-react';
 import SimpleIcon from './SimpleIcon';
+import { generateAndDownloadCV } from '../utils/generateCV';
 
 const Hero: React.FC = () => {
   const scrollToPortfolio = () => {
@@ -13,6 +14,10 @@ const Hero: React.FC = () => {
 
   const redirectToWhatsApp = () => {
     window.open('https://wa.me/+923362255235', '_blank');
+  };
+
+  const handleDownloadCV = () => {
+    generateAndDownloadCV();
   };
 
   const skills = [
@@ -111,10 +116,11 @@ const Hero: React.FC = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start px-4 lg:px-0">
               <button
-                onClick={scrollToPortfolio}
-                className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-all"
+                onClick={handleDownloadCV}
+                className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-all flex items-center justify-center space-x-2"
               >
-                View Portfolio
+                <Download className="w-4 h-4" />
+                <span>Download CV</span>
               </button>
               <button
                 onClick={redirectToWhatsApp}
