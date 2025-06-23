@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // Redirect to WhatsApp instead of form submission
     const message = `Hi Naveed! I'm interested in your services.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/+923001234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/+923362255235?text=${message}`, '_blank');
   };
 
   const contactInfo = [
@@ -36,8 +36,8 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: "WhatsApp",
-      value: "+92 300 1234567",
-      link: "https://wa.me/923001234567"
+      value: "+92 336 2255235",
+      link: "https://wa.me/923362255235"
     },
     {
       icon: MapPin,

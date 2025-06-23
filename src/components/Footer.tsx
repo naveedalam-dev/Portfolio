@@ -78,8 +78,8 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-400 text-sm lg:text-base">
                 <Phone className="w-4 h-4" />
-                <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  +92 300 1234567
+                <a href="https://wa.me/923362255235" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  +92 336 2255235
                 </a>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 text-sm lg:text-base">

@@ -55,7 +55,7 @@ const Articles: React.FC = () => {
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">For premium web development and design services, contact <strong class="text-gray-900 dark:text-white">Naveed Alam</strong>:</p>
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
             <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@naveedalam.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 300 1234567</li>
+            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 336 2255235</li>
             <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://naveedalam.dev</li>
             <li><strong class="text-gray-900 dark:text-white">Location:</strong> Pakistan</li>
           </ul>
@@ -98,7 +98,7 @@ const Articles: React.FC = () => {
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
             <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://naveedalam.dev</li>
             <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@naveedalam.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 300 1234567</li>
+            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 336 2255235</li>
           </ul>
         </div>
       `,
@@ -140,7 +140,7 @@ const Articles: React.FC = () => {
           <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
             <li><strong class="text-gray-900 dark:text-white">Website:</strong> https://naveedalam.dev</li>
             <li><strong class="text-gray-900 dark:text-white">Email:</strong> contact@naveedalam.dev</li>
-            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 300 1234567</li>
+            <li><strong class="text-gray-900 dark:text-white">WhatsApp:</strong> +92 336 2255235</li>
             <li><strong class="text-gray-900 dark:text-white">Location:</strong> Pakistan</li>
           </ul>
         </div>
@@ -156,7 +156,7 @@ const Articles: React.FC = () => {
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923001234567', '_blank');
+    window.open('https://wa.me/+923362255235', '_blank');
   };
 
   return (

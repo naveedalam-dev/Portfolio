@@ -50,7 +50,7 @@ const Services: React.FC = () => {
   ];
 
   const redirectToWhatsApp = () => {
-    window.open('https://wa.me/+923001234567', '_blank');
+    window.open('https://wa.me/+923362255235', '_blank');
   };
 
   return (
