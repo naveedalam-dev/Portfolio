@@ -148,6 +148,8 @@ const About: React.FC = () => {
                   src="/WhatsApp_Image_2025-06-19_at_11.11.19_b3646287-removebg-preview.png"
                   alt="Naveed Alam - Professional Web Developer & UI/UX Designer from Pakistan"
                   className="w-full h-full object-cover object-center"
+                  loading="eager"
+                  fetchpriority="high"
                 />
                 
                 {/* Subtle Overlay */}
