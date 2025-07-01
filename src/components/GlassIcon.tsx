@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './GlassIcon.css';
 
 interface GlassIconProps {
@@ -37,7 +37,7 @@ const sizeMapping = {
   xl: { container: 'w-20 h-20', icon: 'w-8 h-8', text: 'text-base' }
 };
 
-const GlassIcon: React.FC<GlassIconProps> = ({ 
+const GlassIcon: React.FC<GlassIconProps> = memo(({ 
   icon, 
   color, 
   label, 
@@ -56,9 +56,9 @@ const GlassIcon: React.FC<GlassIconProps> = ({
   const sizeClasses = sizeMapping[size];
 
   return (
-    <div className={`glass-icon-container ${className}`}>
+    <div className={`glass-icon-container icon-container ${className}`}>
       <button
-        className={`glass-icon ${sizeClasses.container} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+        className={`glass-icon motion-element ${sizeClasses.container} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         aria-label={label}
         type="button"
         onClick={onClick}
@@ -81,6 +81,8 @@ const GlassIcon: React.FC<GlassIconProps> = ({
       </button>
     </div>
   );
-};
+});
+
+GlassIcon.displayName = 'GlassIcon';
 
 export default GlassIcon;

@@ -150,6 +150,8 @@ const About: React.FC = () => {
                   className="w-full h-full object-cover object-center"
                   loading="eager"
                   fetchpriority="high"
+                  width="400"
+                  height="400"
                 />
                 
                 {/* Subtle Overlay */}

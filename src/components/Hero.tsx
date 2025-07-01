@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
     <section id="home" className="min-h-screen flex items-center bg-white dark:bg-gray-950 pt-20 lg:pt-24 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Content */}
+          {/* Content - Optimized for LCP */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               <span className="text-green-700 dark:text-green-400 text-sm font-medium">Available for Projects</span>
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading - LCP Element */}
             <div className="space-y-3 lg:space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 dark:text-white leading-tight">
                 Naveed Alam
