@@ -4,19 +4,14 @@
   "description": "Professional portfolio of Naveed Alam - Web Developer, UI/UX Designer, and creator of innovative digital solutions",
   "icons": [
     {
-      "src": "/N Code Logo Design (1).png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     },
     {
       "src": "/favicon.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
-    },
-    {
-      "src": "/N Code Logo Design (1).png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ],
   "theme_color": "#111827",

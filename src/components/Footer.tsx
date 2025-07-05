@@ -43,12 +43,8 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
               className="flex items-center space-x-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center">
-                <img 
-                  src="/N Code Logo Design (1).png" 
-                  alt="Naveed Alam Logo" 
-                  className="w-full h-full object-contain"
-                />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+                <span className="text-gray-900 font-bold text-xl">N</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Naveed Alam</h3>
