@@ -141,8 +141,12 @@ const Hero: React.FC = () => {
             <div className="bg-gray-100 dark:bg-gray-900 rounded-2xl p-6 lg:p-8 border border-gray-200 dark:border-gray-800">
               {/* Header */}
               <div className="flex items-center space-x-4 mb-6 lg:mb-8">
-                <div className="w-12 h-12 bg-gray-900 dark:bg-white rounded-lg flex items-center justify-center">
-                  <span className="text-white dark:text-gray-900 font-bold text-xl">N</span>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                  <img 
+                    src="/N Code Logo Design (1).png" 
+                    alt="Naveed Alam Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white">Premium Quality</h3>

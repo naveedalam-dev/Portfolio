@@ -55,8 +55,12 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.02 }}
             onClick={() => scrollToSection('#home')}
           >
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gray-900 dark:bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
-              <span className="text-white dark:text-gray-900 font-bold text-lg lg:text-xl">N</span>
+            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
+              <img 
+                src="/N Code Logo Design (1).png" 
+                alt="Naveed Alam Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             {/* Logo Text - Always visible on mobile */}
             <div className="min-w-0">
