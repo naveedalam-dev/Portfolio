@@ -57,15 +57,15 @@ const Contact: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">
             Let's Work Together
           </h2>
-          <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
+          <p className="text-sm lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-3 lg:px-0">
             Ready to bring your project to life? I'd love to discuss your ideas and create something amazing together.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-12">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -73,13 +73,13 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-6 lg:p-8 border border-gray-200 dark:border-gray-800">
-              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-6">Start Your Project</h3>
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-lg lg:rounded-xl p-4 lg:p-8 border border-gray-200 dark:border-gray-800">
+              <h3 className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 lg:mb-6">Start Your Project</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6">
+                <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-medium mb-2 text-sm lg:text-base">
+                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-medium mb-1.5 lg:mb-2 text-xs lg:text-base">
                       Full Name *
                     </label>
                     <input
@@ -89,12 +89,12 @@ const Contact: React.FC = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
+                      className="w-full px-3 py-2.5 lg:px-4 lg:py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-medium mb-2 text-sm lg:text-base">
+                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-medium mb-1.5 lg:mb-2 text-xs lg:text-base">
                       Email Address *
                     </label>
                     <input
@@ -104,14 +104,14 @@ const Contact: React.FC = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
+                      className="w-full px-3 py-2.5 lg:px-4 lg:py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 font-medium mb-2 text-sm lg:text-base">
+                  <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 font-medium mb-1.5 lg:mb-2 text-xs lg:text-base">
                     Project Subject *
                   </label>
                   <input
@@ -121,13 +121,13 @@ const Contact: React.FC = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
+                    className="w-full px-3 py-2.5 lg:px-4 lg:py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
                     placeholder="Brief description of your project"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-medium mb-2 text-sm lg:text-base">
+                  <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-medium mb-1.5 lg:mb-2 text-xs lg:text-base">
                     Project Details *
                   </label>
                   <textarea
@@ -136,17 +136,17 @@ const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all resize-none bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
+                    rows={4}
+                    className="w-full px-3 py-2.5 lg:px-4 lg:py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all resize-none bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm lg:text-base"
                     placeholder="Tell me more about your project, goals, and requirements..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 lg:py-4 rounded-lg font-medium transition-all flex items-center justify-center space-x-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 text-sm lg:text-base"
+                  className="w-full px-5 py-2.5 lg:px-6 lg:py-4 rounded-lg font-medium transition-all flex items-center justify-center space-x-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 text-sm lg:text-base"
                 >
-                  <Send className="w-5 h-5" />
+                  <Send className="w-4 h-4 lg:w-5 lg:h-5" />
                   <span>Send via WhatsApp</span>
                 </button>
               </form>
@@ -160,10 +160,10 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-5 lg:p-6 border border-gray-200 dark:border-gray-800">
-              <h3 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-6">Get in Touch</h3>
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-lg lg:rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800">
+              <h3 className="text-base lg:text-xl font-bold text-gray-900 dark:text-white mb-4 lg:mb-6">Get in Touch</h3>
               
-              <div className="space-y-4">
+              <div className="space-y-3 lg:space-y-4">
                 {contactInfo.map((contact, index) => (
                   <motion.div
                     key={contact.title}
@@ -177,24 +177,24 @@ const Contact: React.FC = () => {
                         href={contact.link}
                         target={contact.link.startsWith('http') ? '_blank' : '_self'}
                         rel={contact.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+                        className="flex items-center space-x-2 lg:space-x-3 p-2 lg:p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
                       >
-                        <div className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800">
-                          <contact.icon className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                        <div className="p-1.5 lg:p-2 rounded-lg bg-gray-200 dark:bg-gray-800">
+                          <contact.icon className="w-4 h-4 lg:w-5 lg:h-5 text-gray-700 dark:text-gray-300" />
                         </div>
                         <div>
-                          <h4 className="font-medium text-gray-900 dark:text-white text-sm lg:text-base">{contact.title}</h4>
-                          <p className="text-gray-600 dark:text-gray-400 text-sm">{contact.value}</p>
+                          <h4 className="font-medium text-gray-900 dark:text-white text-xs lg:text-base">{contact.title}</h4>
+                          <p className="text-gray-600 dark:text-gray-400 text-xs lg:text-sm">{contact.value}</p>
                         </div>
                       </a>
                     ) : (
-                      <div className="flex items-center space-x-3 p-3 rounded-lg">
-                        <div className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800">
-                          <contact.icon className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                      <div className="flex items-center space-x-2 lg:space-x-3 p-2 lg:p-3 rounded-lg">
+                        <div className="p-1.5 lg:p-2 rounded-lg bg-gray-200 dark:bg-gray-800">
+                          <contact.icon className="w-4 h-4 lg:w-5 lg:h-5 text-gray-700 dark:text-gray-300" />
                         </div>
                         <div>
-                          <h4 className="font-medium text-gray-900 dark:text-white text-sm lg:text-base">{contact.title}</h4>
-                          <p className="text-gray-600 dark:text-gray-400 text-sm">{contact.value}</p>
+                          <h4 className="font-medium text-gray-900 dark:text-white text-xs lg:text-base">{contact.title}</h4>
+                          <p className="text-gray-600 dark:text-gray-400 text-xs lg:text-sm">{contact.value}</p>
                         </div>
                       </div>
                     )}
@@ -203,9 +203,9 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-5 lg:p-6 border border-gray-200 dark:border-gray-800">
-              <h4 className="font-bold text-gray-900 dark:text-white mb-4 text-sm lg:text-base">Response Time</h4>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+            <div className="bg-gray-50 dark:bg-gray-950 rounded-lg lg:rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800">
+              <h4 className="font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 text-xs lg:text-base">Response Time</h4>
+              <ul className="space-y-1.5 lg:space-y-2 text-gray-600 dark:text-gray-400 text-xs lg:text-sm">
                 <li>• Email responses within 12 hours</li>
                 <li>• WhatsApp responses within 2 hours</li>
                 <li>• Project proposals within 24 hours</li>

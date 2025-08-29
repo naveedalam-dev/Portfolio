@@ -169,16 +169,16 @@ const Articles: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">
             Professional Articles
           </h2>
-          <p className="text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-4 lg:px-0">
+          <p className="text-sm lg:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto px-3 lg:px-0">
             In-depth articles about Naveed Alam's expertise, journey, and professional services in web development and UI/UX design.
           </p>
         </motion.div>
 
         {/* Articles Grid - Mobile Optimized */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mb-8 lg:mb-16">
           {articles.map((article, index) => (
             <motion.article
               key={article.id}
@@ -189,9 +189,9 @@ const Articles: React.FC = () => {
               className="group cursor-pointer"
               onClick={() => setSelectedArticle(article)}
             >
-              <div className="bg-gray-50 dark:bg-gray-950 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 h-full">
+              <div className="bg-gray-50 dark:bg-gray-950 rounded-lg lg:rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-all duration-300 h-full">
                 {/* Article Image */}
-                <div className="relative overflow-hidden h-48">
+                <div className="relative overflow-hidden h-40 lg:h-48">
                   <img
                     src={article.image}
                     alt={article.title}
@@ -201,7 +201,7 @@ const Articles: React.FC = () => {
                   
                   {/* Category Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="px-2 py-1 bg-gray-900/90 text-white text-xs font-medium rounded-md">
+                    <span className="px-1.5 py-0.5 lg:px-2 lg:py-1 bg-gray-900/90 text-white text-xs lg:text-xs font-medium rounded-md">
                       {article.category}
                     </span>
                   </div>
@@ -209,50 +209,50 @@ const Articles: React.FC = () => {
                   {/* Featured Badge */}
                   {article.featured && (
                     <div className="absolute top-3 right-3">
-                      <div className="flex items-center space-x-1 bg-yellow-400 text-black px-2 py-1 rounded-md">
-                        <Star className="w-3 h-3 fill-current" />
-                        <span className="text-xs font-bold">Featured</span>
+                      <div className="flex items-center space-x-1 bg-yellow-400 text-black px-1.5 py-0.5 lg:px-2 lg:py-1 rounded-md">
+                        <Star className="w-2.5 h-2.5 lg:w-3 lg:h-3 fill-current" />
+                        <span className="text-xs lg:text-xs font-bold">Featured</span>
                       </div>
                     </div>
                   )}
                 </div>
 
                 {/* Article Content */}
-                <div className="p-5 lg:p-6">
+                <div className="p-3 lg:p-6">
                   {/* Article Meta */}
-                  <div className="flex items-center justify-between text-xs text-gray-600 dark:text-gray-400 mb-3">
+                  <div className="flex items-center justify-between text-xs lg:text-xs text-gray-600 dark:text-gray-400 mb-2 lg:mb-3">
                     <div className="flex items-center space-x-3">
                       <span className="flex items-center space-x-1">
-                        <User className="w-3 h-3" />
+                        <User className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
                         <span>{article.author}</span>
                       </span>
                       <span className="flex items-center space-x-1">
-                        <Calendar className="w-3 h-3" />
+                        <Calendar className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
                         <span>{article.publishDate}</span>
                       </span>
                     </div>
                     <span className="flex items-center space-x-1">
-                      <Clock className="w-3 h-3" />
+                      <Clock className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
                       <span>{article.readTime}</span>
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
+                  <h3 className="text-base lg:text-xl font-bold text-gray-900 dark:text-white mb-2 lg:mb-3 line-clamp-2 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
                     {article.title}
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-400 text-xs lg:text-sm mb-3 lg:mb-4 line-clamp-3 leading-relaxed">
                     {article.excerpt}
                   </p>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-1 lg:gap-2 mb-3 lg:mb-4">
                     {article.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded text-xs font-medium"
+                        className="px-1.5 py-0.5 lg:px-2 lg:py-1 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded text-xs lg:text-xs font-medium"
                       >
                         {tag}
                       </span>
@@ -261,11 +261,11 @@ const Articles: React.FC = () => {
 
                   {/* Read More Button */}
                   <div className="flex items-center justify-between">
-                    <button className="flex items-center space-x-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 font-medium transition-colors text-sm">
+                    <button className="flex items-center space-x-1.5 lg:space-x-2 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 font-medium transition-colors text-xs lg:text-sm">
                       <span>Read Article</span>
-                      <ArrowRight className="w-4 h-4" />
+                      <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4" />
                     </button>
-                    <ExternalLink className="w-4 h-4 text-gray-400 dark:text-gray-600" />
+                    <ExternalLink className="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 dark:text-gray-600" />
                   </div>
                 </div>
               </div>
@@ -280,16 +280,16 @@ const Articles: React.FC = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-6 lg:p-8 border border-gray-200 dark:border-gray-800">
-            <h3 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-gray-50 dark:bg-gray-950 rounded-lg lg:rounded-xl p-4 lg:p-8 border border-gray-200 dark:border-gray-800">
+            <h3 className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">
               Ready to Work with Naveed Alam?
             </h3>
-            <p className="text-sm lg:text-base text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto px-4 lg:px-0">
+            <p className="text-xs lg:text-base text-gray-700 dark:text-gray-300 mb-4 lg:mb-6 max-w-2xl mx-auto px-2 lg:px-0">
               Join 250+ satisfied clients worldwide. Contact Naveed Alam today for premium web development and UI/UX design services.
             </p>
             <button
               onClick={redirectToWhatsApp}
-              className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-6 lg:px-8 py-3 rounded-lg font-medium transition-all"
+              className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-5 lg:px-8 py-2.5 lg:py-3 rounded-lg font-medium transition-all text-sm lg:text-base"
             >
               Start Your Project
             </button>

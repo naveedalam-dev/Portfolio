@@ -138,12 +138,12 @@ const About: React.FC = () => {
             className="flex flex-col h-full"
           >
             {/* Main Professional Image Container */}
-            <div className="relative w-full max-w-sm mx-auto mb-8 lg:mb-8">
+            <div className="relative w-full max-w-xs lg:max-w-sm mx-auto mb-6 lg:mb-8">
               {/* Background Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-300/20 dark:from-white/10 to-gray-500/20 dark:to-gray-300/10 rounded-3xl blur-3xl transform scale-110"></div>
               
               {/* Image Container */}
-              <div className="relative w-full h-80 lg:h-96 rounded-3xl overflow-hidden bg-gradient-to-br from-gray-200 dark:from-gray-800 to-gray-300 dark:to-gray-900 border-2 border-gray-300 dark:border-gray-950 shadow-2xl">
+              <div className="relative w-full h-64 lg:h-96 rounded-2xl lg:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-200 dark:from-gray-800 to-gray-300 dark:to-gray-900 border-2 border-gray-300 dark:border-gray-950 shadow-2xl">
                 <img
                   src="/WhatsApp_Image_2025-06-19_at_11.11.19_b3646287-removebg-preview.png"
                   alt="Naveed Alam - Professional Web Developer & UI/UX Designer from Pakistan"
@@ -164,11 +164,11 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="absolute -top-3 -left-3 lg:-top-4 lg:-left-4 bg-white dark:bg-gray-950 px-3 py-2 lg:px-4 lg:py-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
+                className="absolute -top-2 -left-2 lg:-top-4 lg:-left-4 bg-white dark:bg-gray-950 px-2 py-1.5 lg:px-4 lg:py-3 rounded-lg lg:rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
               >
                 <div className="text-center">
-                  <div className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white">250+</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Global Projects</div>
+                  <div className="text-sm lg:text-xl font-bold text-gray-900 dark:text-white">250+</div>
+                  <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Projects</div>
                 </div>
               </motion.div>
 
@@ -177,11 +177,11 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="absolute -top-3 -right-3 lg:-top-4 lg:-right-4 bg-white dark:bg-gray-950 px-3 py-2 lg:px-4 lg:py-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
+                className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-white dark:bg-gray-950 px-2 py-1.5 lg:px-4 lg:py-3 rounded-lg lg:rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
               >
                 <div className="text-center">
-                  <div className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white">6+</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Years Exp.</div>
+                  <div className="text-sm lg:text-xl font-bold text-gray-900 dark:text-white">6+</div>
+                  <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Years</div>
                 </div>
               </motion.div>
 
@@ -190,11 +190,11 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.7 }}
-                className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 lg:-bottom-4 bg-white dark:bg-gray-950 px-4 py-2 lg:px-6 lg:py-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
+                className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 lg:-bottom-4 bg-white dark:bg-gray-950 px-3 py-1.5 lg:px-6 lg:py-3 rounded-lg lg:rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
               >
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Available for Projects</span>
+                  <span className="text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Available</span>
                 </div>
               </motion.div>
             </div>
@@ -208,12 +208,12 @@ const About: React.FC = () => {
               className="flex-1 space-y-6"
             >
               {/* Technical Stack Section */}
-              <div className="bg-white dark:bg-gray-950 rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800">
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center space-x-2">
+              <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800">
+                <h4 className="text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center space-x-2">
                   <Code className="w-5 h-5 text-blue-500 dark:text-blue-400" />
                   <span>Technical Stack</span>
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-4">
                   {technicalStack.map((stack, index) => (
                     <motion.div
                       key={stack.name}
@@ -221,15 +221,15 @@ const About: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
-                      className="bg-gray-100 dark:bg-gray-800 rounded-lg p-3"
+                      className="bg-gray-100 dark:bg-gray-800 rounded-md lg:rounded-lg p-2 lg:p-3"
                     >
-                      <div className="flex items-center space-x-2 mb-2">
-                        <stack.icon className="w-4 h-4 text-gray-700 dark:text-gray-300" />
-                        <h5 className="font-semibold text-gray-900 dark:text-white text-sm">{stack.name}</h5>
+                      <div className="flex items-center space-x-1.5 lg:space-x-2 mb-1.5 lg:mb-2">
+                        <stack.icon className="w-3 h-3 lg:w-4 lg:h-4 text-gray-700 dark:text-gray-300" />
+                        <h5 className="font-semibold text-gray-900 dark:text-white text-xs lg:text-sm">{stack.name}</h5>
                       </div>
-                      <div className="space-y-1">
+                      <div className="space-y-0.5 lg:space-y-1">
                         {stack.tools.map((tool) => (
-                          <span key={tool} className="inline-block bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded text-xs mr-1 mb-1">
+                          <span key={tool} className="inline-block bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-1.5 py-0.5 lg:px-2 lg:py-1 rounded text-xs mr-1 mb-0.5 lg:mb-1">
                             {tool}
                           </span>
                         ))}
@@ -240,12 +240,12 @@ const About: React.FC = () => {
               </div>
 
               {/* Certifications Section - Mobile Optimized */}
-              <div className="bg-white dark:bg-gray-950 rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800">
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center space-x-2">
+              <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800">
+                <h4 className="text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center space-x-2">
                   <Award className="w-5 h-5 text-yellow-500 dark:text-yellow-400" />
                   <span>Certifications</span>
                 </h4>
-                <div className="space-y-3">
+                <div className="space-y-2 lg:space-y-3">
                   {certifications.map((cert, index) => (
                     <motion.div
                       key={cert.name}
@@ -253,16 +253,16 @@ const About: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
-                      className="flex items-center justify-between p-3 bg-gray-100 dark:bg-gray-800 rounded-lg"
+                      className="flex items-center justify-between p-2 lg:p-3 bg-gray-100 dark:bg-gray-800 rounded-md lg:rounded-lg"
                     >
                       <div>
-                        <h5 className="font-semibold text-gray-900 dark:text-white text-sm flex items-center space-x-2">
+                        <h5 className="font-semibold text-gray-900 dark:text-white text-xs lg:text-sm flex items-center space-x-1.5 lg:space-x-2">
                           <span>{cert.name}</span>
-                          {cert.verified && <CheckCircle className="w-3 h-3 text-green-500 dark:text-green-400" />}
+                          {cert.verified && <CheckCircle className="w-2.5 h-2.5 lg:w-3 lg:h-3 text-green-500 dark:text-green-400" />}
                         </h5>
-                        <p className="text-gray-600 dark:text-gray-400 text-xs">{cert.authority}</p>
+                        <p className="text-gray-600 dark:text-gray-400 text-xs lg:text-xs">{cert.authority}</p>
                       </div>
-                      <span className="text-gray-600 dark:text-gray-400 text-xs">{cert.year}</span>
+                      <span className="text-gray-600 dark:text-gray-400 text-xs lg:text-xs">{cert.year}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -282,12 +282,12 @@ const About: React.FC = () => {
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
                 Naveed Alam
               </h3>
-              <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-base lg:text-xl text-gray-600 dark:text-gray-400 mb-3 lg:mb-4">
                 Developer & UI/UX Designer
               </p>
               
               {/* Location & Details */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6 text-sm text-gray-600 dark:text-gray-400 mb-6">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-6 text-xs lg:text-sm text-gray-600 dark:text-gray-400 mb-4 lg:mb-6">
                 <span className="flex items-center space-x-1">
                   <span>📍</span>
                   <span>Pakistan</span>
@@ -303,7 +303,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Key Achievements Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+              <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-3 mb-4 lg:mb-6">
                 {achievements.map((achievement, index) => (
                   <motion.div
                     key={achievement}
@@ -313,17 +313,17 @@ const About: React.FC = () => {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center space-x-2 justify-center lg:justify-start"
                   >
-                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 flex-shrink-0" />
-                    <span className="text-sm text-gray-700 dark:text-gray-300 font-medium">{achievement}</span>
+                    <CheckCircle className="w-3 h-3 lg:w-4 lg:h-4 text-green-500 dark:text-green-400 flex-shrink-0" />
+                    <span className="text-xs lg:text-sm text-gray-700 dark:text-gray-300 font-medium">{achievement}</span>
                   </motion.div>
                 ))}
               </div>
             </div>
 
             {/* My Journey Section */}
-            <div className="bg-white dark:bg-gray-950 rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800">
-              <h4 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-4">My Journey</h4>
-              <div className="space-y-4 text-sm lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800">
+              <h4 className="text-base lg:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">My Journey</h4>
+              <div className="space-y-3 lg:space-y-4 text-xs lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   Since 2018, I've been crafting digital experiences that make a difference. What started as creating 
                   innovative platforms like <strong className="text-gray-900 dark:text-white">BugSolution</strong> and <strong className="text-gray-900 dark:text-white">CyberCrew</strong> 
@@ -341,9 +341,9 @@ const About: React.FC = () => {
             </div>
 
             {/* Technical Expertise Section */}
-            <div className="bg-white dark:bg-gray-950 rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800">
-              <h4 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-6">Technical Expertise</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+            <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800">
+              <h4 className="text-base lg:text-xl font-bold text-gray-900 dark:text-white mb-4 lg:mb-6">Technical Expertise</h4>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
                 {skills.map((skill, index) => (
                   <motion.div
                     key={skill.name}
@@ -353,10 +353,10 @@ const About: React.FC = () => {
                     transition={{ delay: index * 0.1 }}
                   >
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">{skill.level}%</span>
+                      <span className="text-xs lg:text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
+                      <span className="text-xs lg:text-sm text-gray-600 dark:text-gray-400">{skill.level}%</span>
                     </div>
-                    <div className="w-full h-2 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+                    <div className="w-full h-1.5 lg:h-2 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
                       <motion.div
                         className="h-full bg-gray-900 dark:bg-white rounded-full"
                         initial={{ width: 0 }}
@@ -371,12 +371,12 @@ const About: React.FC = () => {
             </div>
 
             {/* Work Process Section with Social Icons */}
-            <div className="bg-white dark:bg-gray-950 rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800 flex-1">
-              <h4 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center space-x-2">
+            <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800 flex-1">
+              <h4 className="text-base lg:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center space-x-2">
                 <Clock className="w-5 h-5 text-indigo-500 dark:text-indigo-400" />
                 <span>My Work Process</span>
               </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+              <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-3 mb-4 lg:mb-6">
                 {workProcess.map((process, index) => (
                   <motion.div
                     key={process.title}
@@ -384,21 +384,21 @@ const About: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="text-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg"
+                    className="text-center p-2 lg:p-3 bg-gray-100 dark:bg-gray-800 rounded-md lg:rounded-lg"
                   >
-                    <div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <process.icon className="w-4 h-4 text-gray-700 dark:text-gray-300" />
+                    <div className="w-6 h-6 lg:w-8 lg:h-8 bg-gray-200 dark:bg-gray-700 rounded-md lg:rounded-lg flex items-center justify-center mx-auto mb-1.5 lg:mb-2">
+                      <process.icon className="w-3 h-3 lg:w-4 lg:h-4 text-gray-700 dark:text-gray-300" />
                     </div>
-                    <h5 className="font-semibold text-gray-900 dark:text-white text-xs mb-1">{process.title}</h5>
-                    <p className="text-gray-600 dark:text-gray-400 text-xs leading-tight">{process.description}</p>
+                    <h5 className="font-semibold text-gray-900 dark:text-white text-xs lg:text-xs mb-1">{process.title}</h5>
+                    <p className="text-gray-600 dark:text-gray-400 text-xs lg:text-xs leading-tight">{process.description}</p>
                   </motion.div>
                 ))}
               </div>
 
               {/* Social Media Links */}
-              <div className="border-t border-gray-200 dark:border-gray-800 pt-4">
-                <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-3 text-center">Connect with me</h5>
-                <div className="flex justify-center space-x-3">
+              <div className="border-t border-gray-200 dark:border-gray-800 pt-3 lg:pt-4">
+                <h5 className="text-xs lg:text-sm font-semibold text-gray-900 dark:text-white mb-2 lg:mb-3 text-center">Connect with me</h5>
+                <div className="flex justify-center space-x-2 lg:space-x-3">
                   {socialLinks.map((social, index) => (
                     <motion.a
                       key={social.name}
@@ -426,7 +426,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Stats Grid with Glass Icons */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-12 lg:mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6 mb-8 lg:mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -436,16 +436,16 @@ const About: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="text-center group"
             >
-              <div className="bg-white dark:bg-gray-950 rounded-xl p-4 lg:p-6 border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all">
-                <div className="flex justify-center mb-4">
+              <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-all">
+                <div className="flex justify-center mb-2 lg:mb-4">
                   <GlassIcon 
                     icon={<stat.icon className="w-5 h-5 lg:w-6 lg:h-6" />}
                     color="gray"
-                    size="lg"
+                    size="md"
                   />
                 </div>
-                <div className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">{stat.number}</div>
-                <div className="text-gray-600 dark:text-gray-400 text-sm font-medium">{stat.label}</div>
+                <div className="text-lg lg:text-3xl font-bold text-gray-900 dark:text-white mb-1 lg:mb-2">{stat.number}</div>
+                <div className="text-gray-600 dark:text-gray-400 text-xs lg:text-sm font-medium">{stat.label}</div>
               </div>
             </motion.div>
           ))}
@@ -458,16 +458,16 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-white dark:bg-gray-950 rounded-xl p-6 lg:p-8 border border-gray-200 dark:border-gray-800">
-            <h3 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-4 lg:p-8 border border-gray-200 dark:border-gray-800">
+            <h3 className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">
               Ready to Work Together?
             </h3>
-            <p className="text-sm lg:text-base text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto px-4 lg:px-0">
+            <p className="text-xs lg:text-base text-gray-700 dark:text-gray-300 mb-4 lg:mb-6 max-w-2xl mx-auto px-2 lg:px-0">
               Let's create something amazing together. I'm available for new projects and would love to discuss your ideas.
             </p>
             <button
               onClick={redirectToWhatsApp}
-              className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-6 lg:px-8 py-3 rounded-lg font-medium transition-all"
+              className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-5 lg:px-8 py-2.5 lg:py-3 rounded-lg font-medium transition-all text-sm lg:text-base"
             >
               Start a Project
             </button>
