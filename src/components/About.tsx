@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Coffee, Heart, Code, Palette, Zap, CheckCircle, Globe, Star, Target, Briefcase, Clock, TrendingUp, Shield, Database, Smartphone, Search, Instagram, Linkedin, Github, Twitter, Facebook } from 'lucide-react';
 import GlassIcon from './GlassIcon';
-import CertificationsSlider from './CertificationsSlider';
 
 const About: React.FC = () => {
   const stats = [
@@ -233,8 +232,6 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              {/* Certifications Section - Mobile Optimized */}
-              <CertificationsSlider />
             </motion.div>
           </motion.div>
 
