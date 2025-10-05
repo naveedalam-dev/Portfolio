@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Briefcase, Wrench, FileText, MessageSquare } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, Wrench, FileText, MessageSquare, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
 import SimpleIcon from './SimpleIcon';
