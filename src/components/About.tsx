@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Coffee, Heart, Code, Palette, Zap, CheckCircle, Globe, Star, Target, Briefcase, Clock, TrendingUp, Shield, Database, Smartphone, Search, Instagram, Linkedin, Github, Twitter, Facebook } from 'lucide-react';
 import GlassIcon from './GlassIcon';
+import CertificationsSlider from './CertificationsSlider';
 
 const About: React.FC = () => {
   const stats = [
@@ -32,41 +33,6 @@ const About: React.FC = () => {
     { name: "AI/ML", tools: ["OpenAI", "TensorFlow", "Machine Learning", "Automation"], icon: Zap },
     { name: "Design", tools: ["Figma", "Adobe XD", "Photoshop", "Illustrator"], icon: Palette },
     { name: "DevOps", tools: ["AWS", "Docker", "CI/CD", "Git"], icon: Shield }
-  ];
-
-  const certifications = [
-    { 
-      name: "IBM Full Stack Software Developer", 
-      authority: "IBM via Coursera", 
-      year: "2024", 
-      verified: true,
-      image: "https://i.postimg.cc/SRgdDPkB/IBM-Coursera-MGVC9-DDF676-B.png",
-      description: "Comprehensive full-stack development program covering modern web technologies"
-    },
-    { 
-      name: "Software Engineering", 
-      authority: "Professional Certification", 
-      year: "2024", 
-      verified: true,
-      image: "https://i.postimg.cc/FFknZrLp/Software-Engineering.png",
-      description: "Advanced software engineering principles and best practices"
-    },
-    { 
-      name: "Foundations of Cybersecurity", 
-      authority: "Google via Coursera", 
-      year: "2024", 
-      verified: true,
-      image: "https://i.postimg.cc/fybd8THK/Foundations-of-Cybersecurity.png",
-      description: "Essential cybersecurity concepts and security frameworks"
-    },
-    { 
-      name: "Foundations of User Experience (UX) Design", 
-      authority: "Google via Coursera", 
-      year: "2024", 
-      verified: true,
-      image: "https://i.postimg.cc/0NkxhMs7/Foundations-of-User-Experience-UX-Design.png",
-      description: "User-centered design principles and UX research methodologies"
-    }
   ];
 
   const workProcess = [
@@ -268,60 +234,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Certifications Section - Mobile Optimized */}
-              <div className="bg-white dark:bg-gray-950 rounded-lg lg:rounded-xl p-3 lg:p-6 border border-gray-200 dark:border-gray-800">
-                <h4 className="text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center space-x-2">
-                  <Award className="w-5 h-5 text-yellow-500 dark:text-yellow-400" />
-                  <span>Certifications</span>
-                </h4>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-4">
-                  {certifications.map((cert, index) => (
-                    <motion.div
-                      key={cert.name}
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="group cursor-pointer"
-                    >
-                      <div className="bg-gray-100 dark:bg-gray-800 rounded-lg lg:rounded-xl p-3 lg:p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all h-full group-hover:shadow-md">
-                        {/* Certificate Image */}
-                        <div className="relative mb-3 lg:mb-4">
-                          <div className="w-full h-24 lg:h-32 bg-white dark:bg-gray-900 rounded-md lg:rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-                            <img
-                              src={cert.image}
-                              alt={cert.name}
-                              className="w-full h-full object-contain p-1 lg:p-2 group-hover:scale-105 transition-transform duration-300"
-                              loading="lazy"
-                            />
-                          </div>
-                          {/* Verified Badge */}
-                          {cert.verified && (
-                            <div className="absolute -top-1 -right-1 lg:-top-2 lg:-right-2 bg-green-500 dark:bg-green-400 rounded-full p-1">
-                              <CheckCircle className="w-2.5 h-2.5 lg:w-3 lg:h-3 text-white dark:text-gray-900" />
-                            </div>
-                          )}
-                        </div>
-                        
-                        {/* Certificate Info */}
-                        <div>
-                          <h5 className="font-semibold text-gray-900 dark:text-white text-xs lg:text-sm mb-1 lg:mb-2 line-clamp-2 leading-tight">
-                            {cert.name}
-                          </h5>
-                          <p className="text-gray-600 dark:text-gray-400 text-xs mb-1 lg:mb-2">{cert.authority}</p>
-                          <p className="text-gray-500 dark:text-gray-500 text-xs mb-2 lg:mb-3 line-clamp-2 leading-relaxed">{cert.description}</p>
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-600 dark:text-gray-400 text-xs font-medium">{cert.year}</span>
-                            <span className="text-green-600 dark:text-green-400 text-xs font-medium flex items-center space-x-1">
-                              <CheckCircle className="w-2.5 h-2.5" />
-                              <span>Verified</span>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+              <CertificationsSlider />
             </motion.div>
           </motion.div>
 
