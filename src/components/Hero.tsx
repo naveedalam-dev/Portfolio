@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, Globe, ArrowDown, Code, Palette, Zap, Star, Users, Coffee, Download } from 'lucide-react';
 import SimpleIcon from './SimpleIcon';
 import { generateAndDownloadCV } from '../utils/generateCV';
+
+const CYCLES_PER_LETTER = 2;
+const SHUFFLE_TIME = 50;
+const CHARS = "!@#$%^&*():{};|,.<>/?";
 
 const Hero: React.FC = () => {
   const scrollToPortfolio = () => {
@@ -122,12 +126,7 @@ const Hero: React.FC = () => {
                 <Download className="w-4 h-4" />
                 <span>Download CV</span>
               </button>
-              <button
-                onClick={redirectToWhatsApp}
-                className="border border-gray-300 dark:border-gray-700 hover:border-gray-900 dark:hover:border-white text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-6 py-2.5 lg:px-8 lg:py-3 rounded-lg font-medium transition-all text-sm lg:text-base"
-              >
-                Hire Me Now
-              </button>
+              <EncryptButton onClick={redirectToWhatsApp} />
             </div>
           </motion.div>
 
@@ -212,6 +211,77 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
     </section>
+  );
+};
+
+const EncryptButton: React.FC<{ onClick: () => void }> = ({ onClick }) => {
+  const TARGET_TEXT = "Hire Me Now";
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [text, setText] = useState(TARGET_TEXT);
+
+  const scramble = () => {
+    let pos = 0;
+
+    intervalRef.current = setInterval(() => {
+      const scrambled = TARGET_TEXT.split("")
+        .map((char, index) => {
+          if (pos / CYCLES_PER_LETTER > index) {
+            return char;
+          }
+
+          const randomCharIndex = Math.floor(Math.random() * CHARS.length);
+          const randomChar = CHARS[randomCharIndex];
+
+          return randomChar;
+        })
+        .join("");
+
+      setText(scrambled);
+      pos++;
+
+      if (pos >= TARGET_TEXT.length * CYCLES_PER_LETTER) {
+        stopScramble();
+      }
+    }, SHUFFLE_TIME);
+  };
+
+  const stopScramble = () => {
+    clearInterval(intervalRef.current || undefined);
+    setText(TARGET_TEXT);
+  };
+
+  return (
+    <motion.button
+      whileHover={{
+        scale: 1.025,
+      }}
+      whileTap={{
+        scale: 0.975,
+      }}
+      onMouseEnter={scramble}
+      onMouseLeave={stopScramble}
+      onClick={onClick}
+      className="group relative overflow-hidden rounded-lg border border-gray-300 dark:border-gray-700 hover:border-gray-900 dark:hover:border-white bg-white dark:bg-gray-950 px-6 py-2.5 lg:px-8 lg:py-3 font-medium transition-all text-sm lg:text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+    >
+      <div className="relative z-10 flex items-center justify-center">
+        <span>{text}</span>
+      </div>
+      <motion.span
+        initial={{
+          y: "100%",
+        }}
+        animate={{
+          y: "-100%",
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 1,
+          ease: "linear",
+        }}
+        className="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-gray-400/0 from-40% via-gray-400/100 to-gray-400/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
+      />
+    </motion.button>
   );
 };
 
