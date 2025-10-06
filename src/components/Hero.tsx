@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useSpring, useMotionTemplate } from 'framer-motion';
 import { MapPin, Calendar, Globe, ArrowDown, Code, Palette, Zap, Star, Users, Coffee, Download } from 'lucide-react';
 import SimpleIcon from './SimpleIcon';
 import { generateAndDownloadCV } from '../utils/generateCV';
@@ -8,7 +8,42 @@ const CYCLES_PER_LETTER = 2;
 const SHUFFLE_TIME = 50;
 const CHARS = "!@#$%^&*():{};|,.<>/?";
 
+const ROTATION_RANGE = 32.5;
+const HALF_ROTATION_RANGE = 32.5 / 2;
+
 const Hero: React.FC = () => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const xSpring = useSpring(x);
+  const ySpring = useSpring(y);
+
+  const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+
+    const rect = cardRef.current.getBoundingClientRect();
+
+    const width = rect.width;
+    const height = rect.height;
+
+    const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
+    const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
+
+    const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
+    const rY = mouseX / width - HALF_ROTATION_RANGE;
+
+    x.set(rX);
+    y.set(rY);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
   const scrollToPortfolio = () => {
     const element = document.querySelector('#portfolio');
     if (element) {
@@ -136,10 +171,26 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative px-2 lg:px-0"
+            style={{ perspective: "1000px" }}
           >
-            <div className="bg-gray-100 dark:bg-gray-900 rounded-xl lg:rounded-2xl p-4 lg:p-8 border border-gray-200 dark:border-gray-800">
+            <motion.div
+              ref={cardRef}
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                transformStyle: "preserve-3d",
+                transform,
+              }}
+              className="bg-gray-100 dark:bg-gray-900 rounded-xl lg:rounded-2xl p-4 lg:p-8 border border-gray-200 dark:border-gray-800"
+            >
               {/* Header */}
-              <div className="flex items-center space-x-3 lg:space-x-4 mb-4 lg:mb-8">
+              <div
+                className="flex items-center space-x-3 lg:space-x-4 mb-4 lg:mb-8"
+                style={{
+                  transform: "translateZ(50px)",
+                  transformStyle: "preserve-3d",
+                }}
+              >
                 <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gray-900 dark:bg-white rounded-lg flex items-center justify-center">
                   <span className="text-white dark:text-gray-900 font-bold text-lg lg:text-xl">N</span>
                 </div>
@@ -150,7 +201,13 @@ const Hero: React.FC = () => {
               </div>
               
               {/* Skills */}
-              <div className="space-y-3 lg:space-y-6">
+              <div
+                className="space-y-3 lg:space-y-6"
+                style={{
+                  transform: "translateZ(40px)",
+                  transformStyle: "preserve-3d",
+                }}
+              >
                 {[
                   { name: "React.js & Next.js", level: 95 },
                   { name: "UI/UX Design", level: 90 },
@@ -174,7 +231,13 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-2 lg:gap-4 mt-4 lg:mt-8 pt-4 lg:pt-6 border-t border-gray-200 dark:border-gray-800">
+              <div
+                className="grid grid-cols-3 gap-2 lg:gap-4 mt-4 lg:mt-8 pt-4 lg:pt-6 border-t border-gray-200 dark:border-gray-800"
+                style={{
+                  transform: "translateZ(50px)",
+                  transformStyle: "preserve-3d",
+                }}
+              >
                 <div className="text-center">
                   <div className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">250+</div>
                   <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Projects</div>
@@ -188,7 +251,7 @@ const Hero: React.FC = () => {
                   <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Years</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
 
