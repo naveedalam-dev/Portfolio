@@ -119,10 +119,13 @@ const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start px-2 lg:px-0">
-              <DrawOutlineButton onClick={handleDownloadCV}>
+              <button
+                onClick={handleDownloadCV}
+                className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 px-6 py-2.5 lg:px-8 lg:py-3 rounded-lg font-medium transition-all flex items-center justify-center space-x-2 text-sm lg:text-base"
+              >
                 <Download className="w-4 h-4" />
                 <span>Download CV</span>
-              </DrawOutlineButton>
+              </button>
               <EncryptButton onClick={redirectToWhatsApp} />
             </div>
           </motion.div>
@@ -208,29 +211,6 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
     </section>
-  );
-};
-
-const DrawOutlineButton: React.FC<{ onClick: () => void; children: React.ReactNode }> = ({ onClick, children }) => {
-  return (
-    <button
-      onClick={onClick}
-      className="group relative bg-gray-900 dark:bg-white px-6 py-2.5 lg:px-8 lg:py-3 rounded-lg font-medium transition-colors duration-[400ms] text-white dark:text-gray-900 hover:text-gray-400 dark:hover:text-gray-600 flex items-center justify-center space-x-2 text-sm lg:text-base"
-    >
-      {children}
-
-      {/* TOP */}
-      <span className="absolute left-0 top-0 h-[2px] w-0 bg-gray-400 dark:bg-gray-600 transition-all duration-100 group-hover:w-full rounded-tl-lg" />
-
-      {/* RIGHT */}
-      <span className="absolute right-0 top-0 h-0 w-[2px] bg-gray-400 dark:bg-gray-600 transition-all delay-100 duration-100 group-hover:h-full rounded-tr-lg" />
-
-      {/* BOTTOM */}
-      <span className="absolute bottom-0 right-0 h-[2px] w-0 bg-gray-400 dark:bg-gray-600 transition-all delay-200 duration-100 group-hover:w-full rounded-br-lg" />
-
-      {/* LEFT */}
-      <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-gray-400 dark:bg-gray-600 transition-all delay-300 duration-100 group-hover:h-full rounded-bl-lg" />
-    </button>
   );
 };
 
