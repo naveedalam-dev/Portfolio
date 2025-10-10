@@ -66,9 +66,9 @@ const Hero: React.FC = () => {
   ];
 
   const achievements = [
-    { icon: <Star className="w-4 h-4" />, label: "250+ Projects" },
+    { icon: <Star className="w-4 h-4" />, label: "50+ Projects" },
     { icon: <Users className="w-4 h-4" />, label: "20+ Countries" },
-    { icon: <Coffee className="w-4 h-4" />, label: "6+ Years" }
+    { icon: <Coffee className="w-4 h-4" />, label: "4+ Years" }
   ];
 
   return (
@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <SimpleIcon icon={<Calendar className="w-4 h-4" />} size="sm" />
-                <span className="text-xs lg:text-sm font-medium text-gray-600 dark:text-gray-400">Since 2018</span>
+                <span className="text-xs lg:text-sm font-medium text-gray-600 dark:text-gray-400">Since 2021</span>
               </div>
               <div className="flex items-center space-x-2">
                 <SimpleIcon icon={<Globe className="w-4 h-4" />} size="sm" />
@@ -116,8 +116,8 @@ const Hero: React.FC = () => {
 
             {/* Description - Optimized for LCP */}
             <p className="text-sm lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 px-2 lg:px-0">
-              Creator of <span className="font-semibold text-gray-900 dark:text-white">BugSolution</span> and <span className="font-semibold text-gray-900 dark:text-white">CyberCrew</span> platforms. 
-              Trusted by <span className="font-semibold text-gray-900 dark:text-white">250+ global clients</span> with premium development solutions.
+              Creator of <span className="font-semibold text-gray-900 dark:text-white">BugSolution</span> and <span className="font-semibold text-gray-900 dark:text-white">CyberCrew</span> platforms.
+              Trusted by <span className="font-semibold text-gray-900 dark:text-white">50+ global clients</span> with premium development solutions.
             </p>
 
             {/* Skills */}
@@ -239,7 +239,7 @@ const Hero: React.FC = () => {
                 }}
               >
                 <div className="text-center">
-                  <div className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">250+</div>
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">50+</div>
                   <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Projects</div>
                 </div>
                 <div className="text-center">
@@ -247,7 +247,7 @@ const Hero: React.FC = () => {
                   <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Countries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">6+</div>
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">4+</div>
                   <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Years</div>
                 </div>
               </div>
