@@ -138,7 +138,7 @@ const About: React.FC = () => {
               {/* Image Container */}
               <div className="relative w-full h-64 lg:h-96 rounded-2xl lg:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-200 dark:from-gray-800 to-gray-300 dark:to-gray-900 border-2 border-gray-300 dark:border-gray-950 shadow-2xl">
                 <img
-                  src="/WhatsApp_Image_2025-06-19_at_11.11.19_b3646287-removebg-preview.png"
+                  src="/Untitled design (6).png"
                   alt="Naveed Alam - Professional Web Developer & UI/UX Designer from Pakistan"
                   className="w-full h-full object-cover object-center"
                   loading="eager"
