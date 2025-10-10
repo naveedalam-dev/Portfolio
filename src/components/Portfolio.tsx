@@ -222,10 +222,10 @@ const Portfolio: React.FC = () => {
           className="mt-8 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6"
         >
           {[
-            { number: "250+", label: "Projects" },
+            { number: "50+", label: "Projects" },
             { number: "20+", label: "Countries" },
             { number: "15K+", label: "Users" },
-            { number: "6+", label: "Years" }
+            { number: "4+", label: "Years" }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
               <div className="text-xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-1">
