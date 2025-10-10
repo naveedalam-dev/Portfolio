@@ -290,7 +290,7 @@ const About: React.FC = () => {
               <h4 className="text-base lg:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">My Journey</h4>
               <div className="space-y-3 lg:space-y-4 text-xs lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
-                  Since 2018, I've been crafting digital experiences that make a difference. What started as creating 
+                  Since 2021, I've been crafting digital experiences that make a difference. What started as creating 
                   innovative platforms like <strong className="text-gray-900 dark:text-white">BugSolution</strong> and <strong className="text-gray-900 dark:text-white">CyberCrew</strong> 
                   has evolved into serving clients across 20+ countries.
                 </p>
