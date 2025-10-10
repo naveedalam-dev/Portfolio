@@ -5,9 +5,9 @@ import GlassIcon from './GlassIcon';
 
 const About: React.FC = () => {
   const stats = [
-    { number: "250+", label: "Projects Completed", icon: Award },
+    { number: "50+", label: "Projects Completed", icon: Award },
     { number: "20+", label: "Countries Served", icon: Users },
-    { number: "6+", label: "Years Experience", icon: Coffee },
+    { number: "4+", label: "Years Experience", icon: Coffee },
     { number: "100%", label: "Client Satisfaction", icon: Heart }
   ];
 
