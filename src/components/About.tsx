@@ -173,7 +173,7 @@ const About: React.FC = () => {
                 className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-white dark:bg-gray-950 px-2 py-1.5 lg:px-4 lg:py-3 rounded-lg lg:rounded-xl shadow-lg border border-gray-200 dark:border-gray-800"
               >
                 <div className="text-center">
-                  <div className="text-sm lg:text-xl font-bold text-gray-900 dark:text-white">6+</div>
+                  <div className="text-sm lg:text-xl font-bold text-gray-900 dark:text-white">4+</div>
                   <div className="text-xs lg:text-xs text-gray-600 dark:text-gray-400">Years</div>
                 </div>
               </motion.div>
