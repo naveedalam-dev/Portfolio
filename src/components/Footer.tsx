@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               className="text-gray-400 mb-6 max-w-md leading-relaxed text-sm lg:text-base"
             >
               Creator of BugSolution and CyberCrew platforms. Trusted by 50+ global clients 
-              with premium web development and design solutions since 2018.
+              with premium web development and design solutions since 2021.
             </motion.p>
 
             <motion.div
