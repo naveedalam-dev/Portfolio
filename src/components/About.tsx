@@ -21,7 +21,7 @@ const About: React.FC = () => {
   const achievements = [
     "Creator of BugSolution",
     "CyberCrew Developer", 
-    "250+ Global Projects",
+    "50+ Global Projects",
     "20+ Countries Served"
   ];
 
