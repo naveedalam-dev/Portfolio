@@ -299,7 +299,7 @@ const About: React.FC = () => {
                   delivering premium web development, UI/UX design, and AI-powered solutions to businesses worldwide.
                 </p>
                 <p>
-                  My commitment to excellence and innovation has earned the trust of 250+ global clients from the USA, UK, 
+                  My commitment to excellence and innovation has earned the trust of 50+ global clients from the USA, UK, 
                   Germany, UAE, Canada, Australia, and many other regions.
                 </p>
               </div>
