@@ -259,7 +259,7 @@ const About: React.FC = () => {
                 </span>
                 <span className="flex items-center space-x-1">
                   <span>📅</span>
-                  <span>Since 2018</span>
+                  <span>Since 2021</span>
                 </span>
                 <span className="flex items-center space-x-1">
                   <span>🌍</span>
