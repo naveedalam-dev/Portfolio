@@ -9,7 +9,7 @@ const Portfolio: React.FC = () => {
       description: "Revolutionary development platform with advanced features and secure infrastructure.",
       image: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=600",
       tech: ["JavaScript", "Node.js", "Security", "API"],
-      year: "2018",
+      year: "2021",
       users: "10K+ Users",
       link: "https://bugsolution.tech",
       featured: true,
@@ -20,7 +20,7 @@ const Portfolio: React.FC = () => {
       description: "Comprehensive platform with premium features and seamless user experience.",
       image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600",
       tech: ["React", "API", "Cloud", "Security"],
-      year: "2019",
+      year: "2025",
       users: "5K+ Downloads",
       link: "#",
       featured: true,
@@ -64,7 +64,7 @@ const Portfolio: React.FC = () => {
       description: "Secure mobile banking application with biometric authentication.",
       image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600",
       tech: ["Flutter", "Firebase", "Blockchain", "Auth"],
-      year: "2024",
+      year: "2025",
       users: "Banking",
       link: "#",
       featured: false,
@@ -250,7 +250,7 @@ const Portfolio: React.FC = () => {
               Ready to Start Your Project?
             </h3>
             <p className="text-xs lg:text-base text-gray-700 dark:text-gray-300 mb-4 lg:mb-6 max-w-2xl mx-auto px-2 lg:px-0">
-              Join 250+ satisfied clients worldwide. Let's create something amazing together.
+              Join 50+ satisfied clients worldwide. Let's create something amazing together.
             </p>
             <button 
               onClick={redirectToWhatsApp}
